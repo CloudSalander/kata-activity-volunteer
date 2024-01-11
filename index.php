@@ -2,15 +2,15 @@
 include('files/students.php');
 include('files/activities.php');
 
-var_dump($activities);
 
-/*
-function mostrarActividades(): void {
-
+function showOptions(array $activities): void {
+	foreach($activities as $key=>$activity) {
+		echo ($key+1)." - ".$activity.PHP_EOL;
+	}
 }
 
-mostrarActividades();
-$option = readline("Hei! Qué actividad quieres asignar?")
-*/
+showOptions($activities);
+$option = readline("Hei! Quina activitat vols assignar?(Introdueix la opció numèrica)");
+
 
 ?>
