@@ -1,11 +1,11 @@
 <?php
 include('files/students.php');
+include('files/activities.php');
 
-var_dump($students);
+var_dump($activities);
 
 /*
 function mostrarActividades(): void {
-
 
 }
 
