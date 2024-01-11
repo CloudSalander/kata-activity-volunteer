@@ -4,7 +4,7 @@
 
 Donada l'absència de voluntaris/es per segons quines activitats a l'aula, volem crear un "generador de voluntaris/ies"!
 
-Les activitats seran:
+Les activitats(de moment) seran:
 
 - Presentació de tema(Masterclass)
 - Shortcut de la setmana
