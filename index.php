@@ -4,7 +4,7 @@
 */
 include('files/students.php');
 include('files/activities.php');
-
+include('exceptions/WrongOptionException.php');
 
 function showOptions(array $activities): void {
 	foreach($activities as $key=>$activity) {
@@ -19,9 +19,17 @@ function checkOptionInput(int $activities_count,string $option): bool {
 showOptions($activities);
 $activity_index = readline("Hei! Quina activitat vols assignar?(Introdueix la opció numèrica)");
 
-if(checkOptionInput(count($activities),$activity_index)) {
-	$student_index = array_rand($students);
-	echo "Li toca a ".$students[$student_index]." fer ".$activities[($activity_index)-1]." felicitats!!"; 
+try {
+	if(checkOptionInput(count($activities),$activity_index)) {
+		$student_index = array_rand($students);
+		echo "Li toca a ".$students[$student_index]." fer ".$activities[($activity_index)-1]." felicitats!!"; 
+	}
+	else {
+		throw new WrongOptionException();
+	}
+}
+catch (WrongOptionException $e) {
+	echo "Caught custom exception: " . $e->getMessage();
 }
 
 ?>
