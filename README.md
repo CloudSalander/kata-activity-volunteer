@@ -1,34 +1,17 @@
-# kata-activity-volunteer-2
+# kata-activity-volunteer
 
-**Kata 25 per l'especialitat fullstackPHP 18-1-24**
+**Kata 24 per l'especialitat fullstackPHP 11-1-24**
 
-Es tracta de continuar l'exercici plantejat a [kata-activity-volunteer](https://github.com/CloudSalander/kata-activity-volunteer.git)
+Donada l'absència de voluntaris/es per segons quines activitats a l'aula, volem crear un "generador de voluntaris/ies"!
 
-Ara necessitem que els/les alumnes els carregui directament d'un JSON que tindrà el següent format:
+Les activitats(de moment) seran:
 
-```
-{"alumnes": [
-	{
-		"nom":"nom1",
-		"cognom":"cognom1"
-	},
-	{
-		"nom":"nom2",
-		"cognom":"cognom2"
-	},
-	.
-	.
-	.
+- Presentació de tema(Masterclass)
+- Shortcut de la setmana
 
-]}
-```
-
- A partir d'aquest arxiu on figurin els alumnes actuals de l'aula, carregar l'informació al nostre programa.
-
-L'**output** haurà de ser el mateix:
+La tria d'una d'aquestes opcions junt amb la llista actual d'alumnes a l'aula haurà de tornar una tria aleatòria de l'estil:
 
 "A en Pepito li toca fer Masterclass!"
 o 
 "A la Pepita li toca explicar el shortcut de la setmana!"
 
-Bonus track: Et veus amb cor de fer el mateix PERÒ a partir d'un arxiu excel? :D
